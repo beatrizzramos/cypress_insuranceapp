@@ -1,6 +1,6 @@
 # Desafio de Testes Automatizados com Cypress - Academia QE
 
-Este projeto contém testes automatizados para um simulador de seguros, utilizando Cypress e Cucumber para implementar testes baseados em comportamento
+Este projeto contém testes automatizados para um simulador de seguros, utilizando Cypress e Cucumber para implementar testes baseados em comportamento (BDD).
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -19,7 +19,7 @@ Este projeto contém testes automatizados para um simulador de seguros, utilizan
 
 1. Clone o repositório:
 ```bash
-clone https://github.com/beatrizzramos/cypress_insuranceapp.git
+git clone https://github.com/beatrizzramos/cypress_insuranceapp.git
 cd cypress_insuranceapp
 ```
 
@@ -32,19 +32,20 @@ npm install
 ```bash
 npm install -g cypress
 ```
+
 4. Instale o Cucumber:
 ```bash
 npm install -D cypress-cucumber-preprocessor
 ```
 
-4. Instale o Faker:
+5. Instale o Faker:
 ```bash
 npm install @faker-js/faker --save-dev
 ```
 
 ## ⚙️ Configuração
 
-1. Configuração do Cypress
+### Configuração do Cypress
 O projeto está configurado com as seguintes configurações no arquivo `cypress.config.js`:
 
 ```javascript
@@ -75,7 +76,7 @@ module.exports = defineConfig({
 });
 ```
 
-2. Configurações de Ambiente
+### Configurações de Ambiente
 As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`:
 ```json
 {
