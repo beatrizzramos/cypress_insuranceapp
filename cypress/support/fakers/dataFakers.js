@@ -12,7 +12,9 @@ const generateVehicleData = () => {
         numberOfSeats: faker.helpers.arrayElement(['1', '2', '3', '4', '5', '6', '7', '8', '9']),
         fuelType: faker.helpers.arrayElement(['Petrol', 'Diesel', 'Electric Power', 'Gas', 'Other']),
         listPrice: faker.number.int({ min: 500, max: 100000 }).toString(),
-        licensePlateNumber: faker.string.alphanumeric(7).toUpperCase(),
+        licensePlateNumber: Cypress.env('licensePlate'),
+        chassisNumber: Cypress.env('chassisNumber'),
+        engineNumber: Cypress.env('engineNumber'),
         annualMileage: faker.number.int({ min: 100, max: 100000 }).toString()
     };
 };
@@ -60,14 +62,12 @@ const generateQuoteData = () => {
     const lastName = faker.person.lastName();
     const suffix = faker.string.alphanumeric(2).toUpperCase() + faker.number.int({ min: 10, max: 99 });
     const username = `${firstName}.${lastName}-${suffix}`;
-    const emailPrefix = `${faker.person.firstName()}_${faker.person.lastName()}${faker.number.int({ min: 10, max: 99 })}`;
-    const email = faker.internet.email({ firstName: emailPrefix });
 
     return {
-        email: email,
-        phone: faker.number.int({ min: 10000000000, max: 99999999999 }).toString(),
-        username: 'accenture',
-        password: 'Accenture123@',
+        email: Cypress.env('testEmail'),
+        phone: Cypress.env('testPhone'),
+        username: Cypress.env('username'),
+        password: Cypress.env('password'),
         comments: faker.lorem.sentence()
     };
 };

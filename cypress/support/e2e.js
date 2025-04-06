@@ -15,7 +15,6 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import './api/spaceX.api'
 import './pages/vehicle.page'
 import './pages/home.page'
 import './pages/insurant.page'

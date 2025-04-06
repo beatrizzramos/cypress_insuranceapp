@@ -1,5 +1,4 @@
 const QUOTE_SELECTORS = {
-    
     EMAIL: '#email',
     PHONE: '#phone',
     USERNAME: '#username',
