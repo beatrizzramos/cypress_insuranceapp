@@ -44,7 +44,53 @@ npm install @faker-js/faker --save-dev
 
 ## ⚙️ Configuração
 
-1. O projeto já vem com as configurações básicas no arquivo `cypress.config.js`
+# Projeto de Testes Automatizados com Cypress
+
+// ... existing code ...
+
+## ⚙️ Configuração
+
+### 1. Configuração do Cypress
+O projeto está configurado com as seguintes configurações no arquivo `cypress.config.js`:
+
+```javascript
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  e2e: {
+    // Configurações de viewport
+    viewportWidth: 1280,
+    viewportHeight: 720,
+    
+    // Configurações de tempo
+    defaultCommandTimeout: 10000,
+    pageLoadTimeout: 60000,
+    
+    // Configurações de execução
+    watchForFileChanges: false,
+    specPattern: 'cypress/e2e/**/*.feature',
+    baseUrl: 'https://sampleapp.tricentis.com',
+    
+    // Configuração do Cucumber
+    setupNodeEvents(on, config) {
+      const cucumber = require('cypress-cucumber-preprocessor').default;
+      on('file:preprocessor', cucumber());
+      return config;
+    }
+  }
+});
+```
+
+### 2. Configurações de Ambiente
+As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`:
+```json
+{
+  "baseUrl": "https://sampleapp.tricentis.com"
+}
+```
+
+// ... existing code ...
+
 2. As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`
 
 ## 🧪 Estrutura do Projeto
