@@ -40,7 +40,10 @@ class QuotePage {
     }
 
     sendQuote() {
-        cy.get(quoteSelectors.sendButton).click({ force: true });
+        cy.get(quoteSelectors.sendButton)
+            .should('be.visible')
+            .should('not.be.disabled')
+            .click({ force: true });
     }
 }
 
