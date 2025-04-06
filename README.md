@@ -44,12 +44,6 @@ npm install @faker-js/faker --save-dev
 
 ## ⚙️ Configuração
 
-# Projeto de Testes Automatizados com Cypress
-
-// ... existing code ...
-
-## ⚙️ Configuração
-
 ### 1. Configuração do Cypress
 O projeto está configurado com as seguintes configurações no arquivo `cypress.config.js`:
 
