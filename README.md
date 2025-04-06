@@ -19,8 +19,8 @@ Este projeto contém testes automatizados para um simulador de seguros, utilizan
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
-cd [NOME_DO_DIRETÓRIO]
+clone https://github.com/beatrizzramos/cypress_insuranceapp.git
+cd cypress_insuranceapp
 ```
 
 2. Instale as dependências:
@@ -31,6 +31,15 @@ npm install
 3. Instale o Cypress globalmente (opcional):
 ```bash
 npm install -g cypress
+```
+4. Instale o Cucumber:
+```bash
+npm install -D cypress-cucumber-preprocessor
+```
+
+4. Instale o Faker:
+```bash
+npm install @faker-js/faker --save-dev
 ```
 
 ## ⚙️ Configuração
