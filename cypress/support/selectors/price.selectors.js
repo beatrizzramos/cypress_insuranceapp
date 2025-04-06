@@ -1,12 +1,12 @@
-const priceSelectors = {
-    priceTable: '#priceTable',
-    priceOptions: {
-        silver: 'input[value="Silver"]',
-        gold: 'input[value="Gold"]',
-        platinum: 'input[value="Platinum"]',
-        ultimate: 'input[value="Ultimate"]'
+const PRICE_SELECTORS = {
+    PRICE_TABLE: '#priceTable',
+    PRICE_OPTIONS: {
+        SILVER: 'input[value="Silver"]',
+        GOLD: 'input[value="Gold"]',
+        PLATINUM: 'input[value="Platinum"]',
+        ULTIMATE: 'input[value="Ultimate"]'
     },
-    nextButton: '#nextsendquote'
+    NEXT_BUTTON: '#nextsendquote'
 };
 
-module.exports = { priceSelectors }; 
+module.exports = { PRICE_SELECTORS }; 

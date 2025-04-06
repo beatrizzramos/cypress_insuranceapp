@@ -1,25 +1,24 @@
-const { vehicleSelectors } = require('../selectors/vehicle.selectors');
+const { VEHICLE_SELECTORS } = require('../selectors/vehicle.selectors');
 
 class VehiclePage {
     validateVehiclePage() {
-        cy.get('#make')
-.should('be.visible').should('not.be.disabled');
+        cy.get('#make').should('be.visible').should('not.be.disabled');
     }
 
     fillVehicleData(vehicleData) {
         cy.get('#make').select(vehicleData.make);
-        cy.get(vehicleSelectors.enginePerformance).type(vehicleData.enginePerformance);
-        cy.get(vehicleSelectors.dateOfManufacture).type(vehicleData.dateOfManufacture);
-        cy.get(vehicleSelectors.numberOfSeats).select(vehicleData.numberOfSeats);
-        cy.get(vehicleSelectors.fuelType).select(vehicleData.fuelType);
-        cy.get(vehicleSelectors.listPrice).type(vehicleData.listPrice);
-        cy.get(vehicleSelectors.licensePlateNumber).type(vehicleData.licensePlateNumber);
-        cy.get(vehicleSelectors.annualMileage).type(vehicleData.annualMileage);
+        cy.get(VEHICLE_SELECTORS.ENGINE_PERFORMANCE).type(vehicleData.enginePerformance);
+        cy.get(VEHICLE_SELECTORS.DATE_OF_MANUFACTURE).type(vehicleData.dateOfManufacture);
+        cy.get(VEHICLE_SELECTORS.NUMBER_OF_SEATS).select(vehicleData.numberOfSeats);
+        cy.get(VEHICLE_SELECTORS.FUEL_TYPE).select(vehicleData.fuelType);
+        cy.get(VEHICLE_SELECTORS.LIST_PRICE).type(vehicleData.listPrice);
+        cy.get(VEHICLE_SELECTORS.LICENSE_PLATE_NUMBER).type(vehicleData.licensePlateNumber);
+        cy.get(VEHICLE_SELECTORS.ANNUAL_MILEAGE).type(vehicleData.annualMileage);
     }
 
     clickNext() {
         cy.wait(2000);
-        cy.get(vehicleSelectors.nextButton).click({ force: true });
+        cy.get(VEHICLE_SELECTORS.NEXT_BUTTON).click({ force: true });
     }
 }
 

@@ -1,17 +1,13 @@
-const quoteSelectors = {
-    // Campos do Formulário
-    email: '#email',
-    phone: '#phone',
-    username: '#username',
-    password: '#password',
-    confirmPassword: '#confirmpassword',
-    comments: '#Comments',
+const QUOTE_SELECTORS = {
     
-    // Botões
-    sendButton: '#sendemail',
-    
-    // Mensagens
-    successMessage: 'Sending e-mail success!'
+    EMAIL: '#email',
+    PHONE: '#phone',
+    USERNAME: '#username',
+    PASSWORD: '#password',
+    CONFIRM_PASSWORD: '#confirmpassword',
+    COMMENTS: '#Comments',
+    SEND_BUTTON: '#sendemail',
+    SUCCESS_MESSAGE: 'Sending e-mail success!'
 };
 
-module.exports = { quoteSelectors }; 
+module.exports = { QUOTE_SELECTORS }; 

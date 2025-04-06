@@ -1,14 +1,14 @@
-const productSelectors = {
-    startDate: '#startdate',
-    insuranceSum: '#insurancesum',
-    meritRating: '#meritrating',
-    damageInsurance: '#damageinsurance',
-    optionalProducts: {
-        euroProtection: '#EuroProtection',
-        legalDefense: '#LegalDefenseInsurance'
+const PRODUCT_SELECTORS = {
+    START_DATE: '#startdate',
+    INSURANCE_SUM: '#insurancesum',
+    MERIT_RATING: '#meritrating',
+    DAMAGE_INSURANCE: '#damageinsurance',
+    OPTIONAL_PRODUCTS: {
+        EURO_PROTECTION: '#EuroProtection',
+        LEGAL_DEFENSE: '#LegalDefenseInsurance'
     },
-    courtesyCar: '#courtesycar',
-    nextButton: '#nextselectpriceoption'
+    COURTESY_CAR: '#courtesycar',
+    NEXT_BUTTON: '#nextselectpriceoption'
 };
 
-module.exports = { productSelectors }; 
+module.exports = { PRODUCT_SELECTORS }; 

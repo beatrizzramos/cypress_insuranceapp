@@ -1,24 +1,18 @@
-const insurantSelectors = {
+const INSURANT_SELECTORS = {
     // Dados Pessoais
-    firstName: '#firstname',
-    lastName: '#lastname',
-    birthDate: '#birthdate',
-    gender: '#gendermale',
-    streetAddress: '#streetaddress',
-    country: '#country',
-    zipCode: '#zipcode',
-    city: '#city',
-    occupation: '#occupation',
-    
-    // Hobbies
+    FIRST_NAME: '#firstname',
+    LAST_NAME: '#lastname',
+    BIRTH_DATE: '#birthdate',
+    GENDER: '#gendermale',
+    STREET_ADDRESS: '#streetaddress',
+    COUNTRY: '#country',
+    ZIP_CODE: '#zipcode',
+    CITY: '#city',
+    OCCUPATION: '#occupation',
     hobbies: 'input[name="Hobbies"]',
-    
-    // Website e Foto
-    website: '#website',
-    picture: '#picture',
-    
-    // Botões
-    nextButton: '#nextenterproductdata'
+    WEBSITE: '#website',
+    PICTURE: '#picture',
+    NEXT_BUTTON: '#nextenterproductdata'
 };
 
-module.exports = { insurantSelectors }; 
+module.exports = { INSURANT_SELECTORS }; 

@@ -39,12 +39,9 @@ const generateInsurantData = () => {
 
 // produto
 const generateProductData = () => {
-    // Pega a data atual e adiciona 1 mês
     const futureDate = new Date();
     futureDate.setMonth(futureDate.getMonth() + 1);
-    // Adiciona mais alguns dias para garantir que esteja mais de 1 mês no futuro
     futureDate.setDate(futureDate.getDate() + 5);
-    
     const formattedDate = `${(futureDate.getMonth() + 1).toString().padStart(2, '0')}/${futureDate.getDate().toString().padStart(2, '0')}/${futureDate.getFullYear()}`;
     
     return {
@@ -59,13 +56,10 @@ const generateProductData = () => {
 
 // cotação
 const generateQuoteData = () => {
-    // Gera um nome de usuário no formato "Nome.Sobrenome-XYZ00"
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
     const suffix = faker.string.alphanumeric(2).toUpperCase() + faker.number.int({ min: 10, max: 99 });
     const username = `${firstName}.${lastName}-${suffix}`;
-
-    // Gera um email no formato "Nome_Sobrenome00@dominio.com"
     const emailPrefix = `${faker.person.firstName()}_${faker.person.lastName()}${faker.number.int({ min: 10, max: 99 })}`;
     const email = faker.internet.email({ firstName: emailPrefix });
 

@@ -1,6 +1,8 @@
-export const homeSelectors = {
-    automobileInsuranceButton: '#nav_automobile',
-    truckInsuranceButton: '#nav_truck',
-    motorcycleInsuranceButton: '#nav_motorcycle',
-    camperInsuranceButton: '#nav_camper'
-}; 
+const HOME_SELECTORS = {
+    AUTOMOBILE_INSURANCE_BUTTON: '#nav_automobile',
+    TRUCK_INSURANCE_BUTTON: '#nav_truck',
+    MOTORCYCLE_INSURANCE_BUTTON: '#nav_motorcycle',
+    CAMPER_INSURANCE_BUTTON: '#nav_camper'
+};
+
+module.exports = { HOME_SELECTORS }; 

@@ -1,4 +1,4 @@
-import { homeSelectors } from '../selectors/home.selectors';
+const { HOME_SELECTORS } = require('../selectors/home.selectors');
 
 class HomePage {
     visit() {
@@ -6,8 +6,8 @@ class HomePage {
     }
 
     clickAutomobileInsurance() {
-        cy.get(homeSelectors.automobileInsuranceButton).click();
+        cy.get(HOME_SELECTORS.AUTOMOBILE_INSURANCE_BUTTON).click();
     }
 }
 
-export default new HomePage();
+module.exports = new HomePage();
