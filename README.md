@@ -85,8 +85,6 @@ As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`:
 
 // ... existing code ...
 
-2. As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`
-
 ## 🧪 Estrutura do Projeto
 
 ```
@@ -143,19 +141,7 @@ npx cypress run --spec "cypress/e2e/insuranceFluxoCompleto.feature"
 
 ## ✨ Autores
 
-- Beaatriz Ramos - [Seu GitHub](https://github.com/beatrizzramos)
-
-## 🙏 Agradecimentos
-
-# Projeto de Testes Automatizados com Cypress
-
-// ... existing code ...
-
-## 🙏 Agradecimentos
-
-# Projeto de Testes Automatizados com Cypress
-
-// ... existing code ...
+- Beatriz Ramos - [GitHub](https://github.com/beatrizzramos)
 
 ## 🙏 Agradecimentos
 
