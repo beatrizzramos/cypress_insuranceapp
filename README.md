@@ -44,7 +44,7 @@ npm install @faker-js/faker --save-dev
 
 ## ⚙️ Configuração
 
-### 1. Configuração do Cypress
+1. Configuração do Cypress
 O projeto está configurado com as seguintes configurações no arquivo `cypress.config.js`:
 
 ```javascript
@@ -75,15 +75,13 @@ module.exports = defineConfig({
 });
 ```
 
-### 2. Configurações de Ambiente
+2. Configurações de Ambiente
 As variáveis de ambiente estão configuradas no arquivo `cypress.env.json`:
 ```json
 {
   "baseUrl": "https://sampleapp.tricentis.com"
 }
 ```
-
-// ... existing code ...
 
 ## 🧪 Estrutura do Projeto
 
