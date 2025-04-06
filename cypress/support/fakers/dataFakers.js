@@ -1,6 +1,6 @@
 const { faker } = require('@faker-js/faker');
 
-// Dados do Veículo (Automóvel)
+// dados do veículo 
 const generateVehicleData = () => {
     const date = faker.date.past({ years: 10 });
     const formattedDate = `${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${date.getFullYear()}`;
@@ -17,7 +17,7 @@ const generateVehicleData = () => {
     };
 };
 
-// Dados do Segurado
+// dados do segurado
 const generateInsurantData = () => {
     const birthDate = faker.date.birthdate({ min: 18, max: 70, mode: 'age' });
     const formattedBirthDate = `${(birthDate.getMonth() + 1).toString().padStart(2, '0')}/${birthDate.getDate().toString().padStart(2, '0')}/${birthDate.getFullYear()}`;
@@ -37,7 +37,7 @@ const generateInsurantData = () => {
     };
 };
 
-// Dados do Produto
+// produto
 const generateProductData = () => {
     // Pega a data atual e adiciona 1 mês
     const futureDate = new Date();
@@ -57,7 +57,7 @@ const generateProductData = () => {
     };
 };
 
-// Dados da Cotação
+// cotação
 const generateQuoteData = () => {
     // Gera um nome de usuário no formato "Nome.Sobrenome-XYZ00"
     const firstName = faker.person.firstName();
